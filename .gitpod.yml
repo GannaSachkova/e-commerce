@@ -3,7 +3,7 @@ image:
 tasks:
  - init: . ${GITPOD_REPO_ROOT}/.theia/init_tasks.sh    
  - name: alias
-   command: echo 'alias&nbsprun="python3 /workspace/e-commerce/manage.py&nbsprunserver&nbsp0.0.0.0:8080"' >> ~/.bashrc &&&nbspsource ~/.bashrc
+   command: echo 'alias run="python3 /workspace/e-commerce/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc && source ~/.bashrc
 
 vscode:
   extensions:
